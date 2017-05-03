@@ -1,32 +1,17 @@
 package ipglobal.launchersuiteapp.Utils;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.Color;
-import android.graphics.LinearGradient;
-import android.graphics.Matrix;
 import android.graphics.Rect;
-import android.graphics.Shader;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.LayerDrawable;
-import android.graphics.drawable.ShapeDrawable;
-import android.graphics.drawable.shapes.RoundRectShape;
-import android.support.annotation.IntDef;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.view.View;
-import android.view.ViewOutlineProvider;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import ipglobal.launchersuiteapp.R;
-
 /**
+ * Clase para contener las imagenes del Launcher y escalarlas
  * Created by oscarcid on 27/04/2017.
  */
-
 public class LauncherFrame extends RelativeLayout {
 
     private Context mContext = null;
@@ -62,13 +47,14 @@ public class LauncherFrame extends RelativeLayout {
             localScaleAnimation.setFillEnabled(true);
             localScaleAnimation.setStartTime(this.animDelay);
             startAnimation(localScaleAnimation);
-            //setBackground(getResources().getDrawable(R.drawable.my_shadow,null));
-            //setOutlineProvider(ViewOutlineProvider.BOUNDS);
-            bringToFront();
-            setBackground(getResources().getDrawable(R.drawable.shadow_fit,null));
-            setElevation(10);
-            //setBackground(getResources().getDrawable(R.drawable.shadow_new,null));
 
+            ImageView ver = (ImageView) getChildAt(0);
+            //ver.setElevation(2F);
+            //ver.setTranslationZ(2F);
+            ver.setHovered(true);
+            bringToFront();
+            setElevation(10);
+            //setBackground(getResources().getDrawable(R.drawable.shadow_fit,null));
 
             /*RoundRectShape rss = new RoundRectShape(new float[] { 0.5f, 0.5f, 0.5f,
                     0.5f, 0.5f, 0.5f, 0.5f, 0.5f }, null, null);
@@ -103,9 +89,10 @@ public class LauncherFrame extends RelativeLayout {
             localScaleAnimation2.setStartTime(this.animDelay);
             startAnimation(localScaleAnimation2);
             setBackground(null);
-            setOutlineProvider(ViewOutlineProvider.BACKGROUND);
+            ImageView ver = (ImageView) getChildAt(0);
+            ver.setHovered(false);
+            //setOutlineProvider(ViewOutlineProvider.BACKGROUND);
             setElevation(1);
-            //setBackground(null);
         }
 
     }

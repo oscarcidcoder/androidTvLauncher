@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:id="@+id/rlout_home" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="45dip"
-    android:paddingRight="45dip"
-    android:paddingBottom="15dp"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip"
+    android:paddingBottom="12dp"
     android:paddingTop="25dip"
     android:descendantFocusability="afterDescendants"
-    android:layout_gravity="center"
     android:background="@drawable/ic_bg"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -18,103 +17,105 @@
         android:layout_width="wrap_content"
         android:layout_height="120dip" />
 
-   <RelativeLayout
-       android:layout_below="@id/img_title"
-       android:gravity="center"
-       android:layout_centerInParent="true"
-       android:fillAfter="true"
-       android:fillEnabled="true"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent">
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_below="@id/img_title"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-       <ipglobal.launchersuiteapp.Utils.LauncherFrame
-           android:id="@+id/lout_netflix"
-           android:layout_width="400dip"
-           android:focusable="true" android:focusableInTouchMode="true"
-           android:descendantFocusability="beforeDescendants"
-           android:layout_height="220dip">
+        <ipglobal.launchersuiteapp.Utils.LauncherFrame
+            android:id="@+id/lout_netflix"
+            android:layout_marginStart="15dip"
+            android:layout_width="500.0dip"
+            android:focusable="true" android:focusableInTouchMode="true"
+            android:descendantFocusability="beforeDescendants"
+            android:layout_height="245.0dip">
 
-           <ImageView
-               android:id="@+id/imbt_netflix"
-               android:elevation="6dp"
-               android:src="@drawable/selector_netflix"
-               android:layout_width="match_parent"
-               android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/imbt_netflix"
+                android:elevation="6dp"
+                android:src="@drawable/selector_netflix"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
 
-       </ipglobal.launchersuiteapp.Utils.LauncherFrame>
-       <ipglobal.launchersuiteapp.Utils.LauncherFrame
-           android:id="@+id/lout_youtube"
-           android:layout_toEndOf="@id/lout_netflix"
-           android:layout_width="400dip"
-           android:layout_marginStart="12dip"
-           android:focusable="true" android:focusableInTouchMode="true"
-           android:descendantFocusability="beforeDescendants"
-           android:layout_height="220dip">
+        </ipglobal.launchersuiteapp.Utils.LauncherFrame>
+        <ipglobal.launchersuiteapp.Utils.LauncherFrame
+            android:id="@+id/lout_youtube"
+            android:layout_marginStart="485dip"
+            android:layout_width="500.0dip"
+            android:focusable="true" android:focusableInTouchMode="true"
+            android:descendantFocusability="beforeDescendants"
+            android:layout_height="245.0dip">
 
-           <ImageView
-               android:id="@+id/imbt_youtube"
-               android:elevation="6dp"
-               android:src="@drawable/selector_youtube"
-               android:layout_width="match_parent"
-               android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/imbt_youtube"
+                android:elevation="6dp"
+                android:src="@drawable/selector_youtube"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
-       </ipglobal.launchersuiteapp.Utils.LauncherFrame>
-       <ipglobal.launchersuiteapp.Utils.LauncherFrame
-           android:id="@+id/lout_spotify"
-           android:layout_below="@id/lout_netflix"
-           android:layout_width="400dip"
-           android:focusable="true" android:focusableInTouchMode="true"
-           android:descendantFocusability="beforeDescendants"
-           android:layout_height="220dip">
+        </ipglobal.launchersuiteapp.Utils.LauncherFrame>
 
-           <ImageView
-               android:id="@+id/imbt_spotify"
-               android:elevation="6dp"
-               android:src="@drawable/selector_spotify"
-               android:layout_width="match_parent"
-               android:layout_height="match_parent" />
+        <ipglobal.launchersuiteapp.Utils.LauncherFrame
+            android:id="@+id/lout_spotify"
+            android:layout_marginTop="220.0dip"
+            android:layout_marginStart="15dip"
+            android:layout_width="500.0dip"
+            android:focusable="true" android:focusableInTouchMode="true"
+            android:descendantFocusability="beforeDescendants"
+            android:layout_height="245.0dip">
 
-       </ipglobal.launchersuiteapp.Utils.LauncherFrame>
+            <ImageView
+                android:id="@+id/imbt_spotify"
+                android:elevation="6dp"
+                android:src="@drawable/selector_spotify"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
-       <ipglobal.launchersuiteapp.Utils.LauncherFrame
-           android:id="@+id/lout_allapp"
-           android:layout_below="@id/lout_youtube"
-           android:descendantFocusability="beforeDescendants"
-           android:layout_toEndOf="@id/lout_spotify"
-           android:layout_marginStart="12dip"
-           android:focusable="true" android:focusableInTouchMode="true"
-           android:layout_width="200dip"
-           android:layout_height="220dip">
+        </ipglobal.launchersuiteapp.Utils.LauncherFrame>
 
-           <ImageView
-               android:id="@+id/imbt_allapp"
-               android:elevation="6dp"
-               android:src="@drawable/selector_apps"
-               android:layout_width="match_parent"
-               android:layout_height="match_parent" />
+        <ipglobal.launchersuiteapp.Utils.LauncherFrame
+            android:id="@+id/lout_allapp"
+            android:layout_marginTop="226.0dip"
+            android:descendantFocusability="beforeDescendants"
+            android:layout_marginStart="512.0dip"
+            android:focusable="true" android:focusableInTouchMode="true"
+            android:layout_width="215.0dip"
+            android:layout_height="235.0dip">
 
-       </ipglobal.launchersuiteapp.Utils.LauncherFrame>
+            <ImageView
+                android:id="@+id/imbt_allapp"
+                android:elevation="6dp"
+                android:src="@drawable/selector_apps"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
-       <ipglobal.launchersuiteapp.Utils.LauncherFrame
-           android:id="@+id/lout_settings"
-           android:layout_below="@id/lout_youtube"
-           android:focusable="true" android:focusableInTouchMode="true"
-           android:descendantFocusability="beforeDescendants"
-           android:layout_toEndOf="@id/lout_allapp"
-           android:layout_marginStart="8dip"
-           android:layout_width="200dip"
-           android:layout_height="220dip">
+        </ipglobal.launchersuiteapp.Utils.LauncherFrame>
 
-           <ImageView
-               android:id="@+id/imbt_settings"
-               android:elevation="6dp"
-               android:src="@drawable/selector_settings"
-               android:layout_width="match_parent"
-               android:layout_height="match_parent" />
+        <ipglobal.launchersuiteapp.Utils.LauncherFrame
+            android:id="@+id/lout_settings"
+            android:layout_marginStart="15dip"
+            android:layout_marginTop="226.0dip"
+            android:focusable="true" android:focusableInTouchMode="true"
+            android:descendantFocusability="beforeDescendants"
+            android:layout_toEndOf="@id/lout_allapp"
+            android:layout_width="215.0dip"
+            android:layout_height="235.0dip">
 
-       </ipglobal.launchersuiteapp.Utils.LauncherFrame>
+            <ImageView
+                android:id="@+id/imbt_settings"
+                android:elevation="6dp"
+                android:src="@drawable/selector_settings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
-   </RelativeLayout>
+        </ipglobal.launchersuiteapp.Utils.LauncherFrame>
+
+    </RelativeLayout>
 
     <ImageView
         android:src="@drawable/logo_header"

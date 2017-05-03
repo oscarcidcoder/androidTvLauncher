@@ -35,7 +35,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
         imgNetflix2.setOnClickListener(this);
         imgYoutube2.setOnClickListener(this);
         imgSettings2.setOnClickListener(this);
-
     }
 
 

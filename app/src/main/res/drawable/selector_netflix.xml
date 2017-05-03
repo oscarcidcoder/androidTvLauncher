@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="@android:integer/config_mediumAnimTime">
-    <item android:drawable="@drawable/ic_netflix" android:state_focused="false" android:state_hovered="false" android:state_pressed="false" />
-    <item android:drawable="@drawable/ic_netflix_focus" android:state_focused="true" android:state_window_focused="true" android:state_hovered="true" android:state_pressed="true" />
-    <item android:state_focused="true" android:state_window_focused="false" android:drawable="@drawable/ic_netflix" />
-    <item android:drawable="@drawable/ic_netflix"  />
+    <item android:drawable="@drawable/ic_netflix_on2" android:state_pressed="true" />
+    <item android:drawable="@drawable/ic_netflix_on2" android:state_focused="true" android:state_window_focused="true" />
+    <item android:drawable="@drawable/ic_netflix_on2" android:state_hovered="true" />
+    <item android:drawable="@drawable/ic_netflix_off"  />
 </selector>
