@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="@android:integer/config_mediumAnimTime">
-    <!-- <item android:drawable="@drawable/ic_youtube" android:state_focused="false" android:state_selected="false" />
-    <item android:drawable="@drawable/ic_youtube_focus" android:state_focused="true" android:state_selected="true" />
-    <item android:drawable="@drawable/ic_youtube"  /> -->
-
     <item android:drawable="@drawable/ic_youtube_on2" android:state_pressed="true" />
     <item android:drawable="@drawable/ic_youtube_on2" android:state_focused="true" android:state_window_focused="true" />
     <item android:drawable="@drawable/ic_youtube_on2" android:state_hovered="true" />

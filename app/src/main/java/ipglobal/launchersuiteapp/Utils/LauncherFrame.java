@@ -39,7 +39,6 @@ public class LauncherFrame extends RelativeLayout {
         super.onFocusChanged(paramBoolean, paramInt, paramRect);
 
         if (paramBoolean){
-            //ScaleAnimation localScaleAnimation = new ScaleAnimation(1.07F, 1.0F, 1.07F, 1.0F, 1, 0.5F, 1, 0.5F);
             ScaleAnimation localScaleAnimation = new ScaleAnimation(1.0F, 1.2F, 1.0F, 1.2F, 1, 0.5F, 1, 0.5F);
             localScaleAnimation.setZAdjustment(Animation.ZORDER_TOP);
             localScaleAnimation.setDuration(400);
@@ -48,35 +47,10 @@ public class LauncherFrame extends RelativeLayout {
             localScaleAnimation.setStartTime(this.animDelay);
             startAnimation(localScaleAnimation);
 
-            ImageView ver = (ImageView) getChildAt(0);
-            //ver.setElevation(2F);
-            //ver.setTranslationZ(2F);
-            ver.setHovered(true);
+            ImageView childImage = (ImageView) getChildAt(0);
+            childImage.setHovered(true);
             bringToFront();
             setElevation(10);
-            //setBackground(getResources().getDrawable(R.drawable.shadow_fit,null));
-
-            /*RoundRectShape rss = new RoundRectShape(new float[] { 0.5f, 0.5f, 0.5f,
-                    0.5f, 0.5f, 0.5f, 0.5f, 0.5f }, null, null);
-            ShapeDrawable sds = new ShapeDrawable(rss);
-            sds.setShaderFactory(new ShapeDrawable.ShaderFactory() {
-                @Override
-                public Shader resize(int width, int height) {
-                    LinearGradient lg = new LinearGradient(0, 0, 0, height,
-                            new int[] { Color.parseColor("#e5e5e5"),
-                                    Color.parseColor("#e5e5e5"),
-                                    Color.parseColor("#e5e5e5"),
-                                    Color.parseColor("#e5e5e5") }, new float[] { 0,
-                            0.20f, 0.20f, 1 }, Shader.TileMode.REPEAT);
-                    return lg;
-                }
-            });
-
-            LayerDrawable ld = new LayerDrawable(new Drawable[] { sds });
-            ld.setLayerInset(0, 1, 1, 1, 1); // inset the shadow so it doesn't start right at the left/top
-            //ld.setLayerInset(1, 0, 0, 5, 5); // inset the top drawable so we can leave a bit of space for the shadow to use
-
-            setBackgroundDrawable(ld);*/
 
 
         }else{
@@ -89,9 +63,8 @@ public class LauncherFrame extends RelativeLayout {
             localScaleAnimation2.setStartTime(this.animDelay);
             startAnimation(localScaleAnimation2);
             setBackground(null);
-            ImageView ver = (ImageView) getChildAt(0);
-            ver.setHovered(false);
-            //setOutlineProvider(ViewOutlineProvider.BACKGROUND);
+            ImageView childImage = (ImageView) getChildAt(0);
+            childImage.setHovered(false);
             setElevation(1);
         }
 
