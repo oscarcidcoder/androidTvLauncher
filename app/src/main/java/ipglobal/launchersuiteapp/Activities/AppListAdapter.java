@@ -16,7 +16,8 @@ import java.util.Collection;
 import ipglobal.launchersuiteapp.R;
 
 /**
- * Created by Arnab Chakraborty
+ * Adaptador de Apps
+ * Created by oscarcid
  */
 public class AppListAdapter extends ArrayAdapter<AppModel> {
     private final LayoutInflater mInflater;

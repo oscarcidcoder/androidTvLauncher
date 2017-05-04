@@ -3,7 +3,6 @@ package ipglobal.launchersuiteapp.Activities;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.graphics.drawable.Drawable;
-
 import java.io.File;
 
 public class AppModel {

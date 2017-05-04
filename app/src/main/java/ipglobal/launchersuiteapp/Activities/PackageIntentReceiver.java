@@ -8,8 +8,6 @@ import android.content.IntentFilter;
 /**
  * Helper class to look for interesting changes to the installed apps
  * so that the loader can be updated.
- *
- * @Credit http://developer.android.com/reference/android/content/AsyncTaskLoader.html
  */
 public class PackageIntentReceiver extends BroadcastReceiver {
 
