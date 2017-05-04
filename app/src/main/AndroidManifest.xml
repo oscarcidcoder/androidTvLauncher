@@ -65,6 +65,15 @@
             android:noHistory="true"
             android:parentActivityName=".Activities.MainActivity"
             android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Activities.QRActivity"
+            android:noHistory="true"
+            android:parentActivityName=".Activities.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="launcher.suiteapp.qrcode"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

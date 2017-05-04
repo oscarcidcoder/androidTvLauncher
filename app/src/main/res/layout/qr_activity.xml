@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activities.QRActivity"
+    android:background="@drawable/ic_bg"
+    android:alpha="0.8"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_hi_user"
+        android:layout_centerHorizontal="true"
+        android:translationZ="6dp"
+        android:elevation="6dp"
+        android:text="Bienvenido Sr. Sergio"
+        android:textStyle="bold"
+        android:textSize="38sp"
+        android:textColor="@android:color/background_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rlout_qr"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_hi_user">
+
+        <TextView
+            android:id="@+id/txt_info_user"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:translationZ="6dp"
+            android:elevation="6dp"
+            android:text="Introduzca el código o lea el la imagen QR con su \n aplicacion SuiteApp para disfrutar de toda la experiencia"
+            android:textSize="22sp"
+            android:textColor="@android:color/background_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@id/txt_info_user"
+            android:id="@+id/txt_pin_user"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:translationZ="6dp"
+            android:elevation="6dp"
+            android:text="CÓDIGO: 168745"
+            android:textStyle="bold"
+            android:textSize="42sp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_below="@id/txt_pin_user"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/img_qr"
+            android:translationZ="10dp"
+            android:elevation="10dp"
+            android:layout_width="400.0dip"
+            android:layout_height="400.0dip" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:visibility="gone"
+        android:text="Continuar"
+        style="@style/Widget.AppCompat.ActionButton"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@id/txt_hi_user"
+        android:id="@+id/video_container"
+        android:layout_marginTop="50dip"
+        android:layout_centerInParent="true"
+        android:translationZ="10dp"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <VideoView
+                android:id="@+id/video_holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
