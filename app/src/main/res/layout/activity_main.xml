@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:id="@+id/rlout_home" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="30dip"
-    android:paddingRight="30dip"
-    android:paddingBottom="12dp"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:paddingBottom="10dp"
     android:paddingTop="25dip"
     android:descendantFocusability="afterDescendants"
     android:background="@drawable/ic_bg"
@@ -19,6 +19,7 @@
 
     <RelativeLayout
         android:gravity="center_horizontal"
+        android:paddingTop="10dip"
         android:layout_below="@id/img_title"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
@@ -119,16 +120,17 @@
     </RelativeLayout>
 
     <ImageView
-        android:src="@drawable/logo_header"
-        android:layout_centerInParent="true"
+        android:src="@drawable/mock"
+        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip" />
 
     <TextClock
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-
         android:textSize="30sp"
         android:soundEffectsEnabled="true"
         android:format12Hour="EE dd LLL k:mm"

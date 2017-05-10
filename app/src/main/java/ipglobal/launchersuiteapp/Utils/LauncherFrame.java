@@ -39,7 +39,7 @@ public class LauncherFrame extends RelativeLayout {
         super.onFocusChanged(paramBoolean, paramInt, paramRect);
 
         if (paramBoolean){
-            ScaleAnimation localScaleAnimation = new ScaleAnimation(1.0F, 1.2F, 1.0F, 1.2F, 1, 0.5F, 1, 0.5F);
+            ScaleAnimation localScaleAnimation = new ScaleAnimation(1.0F, 1.3F, 1.0F, 1.3F, 1, 0.5F, 1, 0.5F);
             localScaleAnimation.setZAdjustment(Animation.ZORDER_TOP);
             localScaleAnimation.setDuration(400);
             localScaleAnimation.setFillAfter(true);
@@ -52,9 +52,8 @@ public class LauncherFrame extends RelativeLayout {
             bringToFront();
             setElevation(10);
 
-
         }else{
-            ScaleAnimation localScaleAnimation2 = new ScaleAnimation(1.2F, 1.0F, 1.2F, 1.0F, 1, 0.5F, 1, 0.5F);
+            ScaleAnimation localScaleAnimation2 = new ScaleAnimation(1.3F, 1.0F, 1.3F, 1.0F, 1, 0.5F, 1, 0.5F);
             localScaleAnimation2.setZAdjustment(1);
             localScaleAnimation2.setDuration(250);
             localScaleAnimation2.setZAdjustment(Animation.ZORDER_NORMAL);
